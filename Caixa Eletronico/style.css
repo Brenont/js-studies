@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F9F9;
+    height: 100%;
+}
+@font-face{
+    font-family:h1;
+    src:url("font/TT0288M_.TTF");
+}
+/* #check{
+    display:none;
+}
+#icone{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    display:none;
+}
+.barra{
+    background-color:#333;
+    height: 100%;
+    width:300px;
+    position: absolute;
+    transition: all .2s linear;
+    left: -400px;
+}
+.nav2{
+    width: 100%;
+    position:absolute;
+    top:50px
+}
+.nav2 a {
+    text-decoration: none;
+}
+.link{
+    background-color:#494950;
+    padding: 20px;
+    font-family:h1;
+    font-size: 12pt;
+    transition: all .2s linear;
+    border-bottom: 2x solid #222;
+    opacity: 0;
+    margin-top:200px;
+}
+.link:hover{
+    background-color: #050542;
+}
+#check: checked ~ .barra{
+    transform: translateX(300px);
+}
+#check: checked ~ .barra .nav2 a .link{
+    opacity: 1;
+    margin-top:0;
+    transition-delay: .2s;
+} */
+header{
+    margin: 0;
+    background-color: rgb(243, 115, 30);
+    color: rgb(29, 24, 109);
+    padding: 25px;
+    font-size: 25px;
+    font-family:h1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div1{
+    padding: 0px 25px 0px 0px;  
+}
+.div2{
+    padding: 0px 0px 0px 25px;
+}
+nav{
+    margin: 0;
+    background-color: rgb(235, 111, 29);
+    color: rgb(29, 24, 109);
+    padding: 20px;
+    font-size: 25px;
+    font-family: h1;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+nav ul{
+    list-style-type: none;
+    display: inline;
+}
+nav li{
+    padding:20px 20px;
+    display: inline;
+}
+.active{
+    background-color: rgba(252, 249, 247, 0.4);
+}
+nav li:hover{
+    background-color: rgba(252, 249, 247, 0.4);
+    transition-duration: 5ms;
+    transition-delay: 2ms;
+}
+.valorinput{
+    height:35px;
+    width:150px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius:50px;
+}
+.caixa{
+    font-family: h1;
+    width: 100%;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+        padding: 20px 0px 30px 0px;
+}
+.inputs{
+    padding: 48px;
+    margin-top: 25px;
+    background-color: rgb(231, 110, 28);
+}
+.button{
+    padding:13px 20px;
+    border-radius:50px;
+    display:flex;
+    justify-content: center;
+    vertical-align:center;
+    margin:auto;
+}
+footer{
+    margin: 0;
+    background-color: rgb(31, 30, 30);
+    width: 100%;
+    color: white;
+    font-size: 18px;
+    font-family: h1;
+    bottom: 0;
+    display: flex;
+}
+@media (Max-width:768px){
+    .caixa{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    #icone{
+        display: block;
+    }
+
+}
+@media (Max-width:425px){
+    header{
+        display: inline-block;
+        vertical-align:center;
+    }
+    .logo{
+        vertical-align:center;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+</head>
+<body>
+    <script>
+        var numero1 =prompt('digite o primeiro numero:');
+        var numero2 =prompt('digite o segundo numero:');
+        var simbolo =prompt('digite 1 para adição \ndigite 2 para subtração \ndigite 3 para multiplicação \ndigite 4 para divisão')
+        var resultado1 = numero1+numero2;
+        var resultado2 = numero1-numero2;
+        var resultado3 = numero1*numero2;
+        var resultado4 = numero1/numero2
+        if (simbolo==1) {
+            console.log (resultado1);
+            alert ('O resultado da soma é: ' +resultado1);
+        } else if (simbolo==2) {
+            console.log (resultado2);
+            alert ('O resultado da subtração é: '+resultado2);
+        } else if (simbolo==3) {
+            console.log (resultado3);
+            alert ('O resultado da multiplicação é: '+resultado3);
+        } else if (simbolo==4) {
+            console.log (resultado4);
+            alert ('O resultado da divisão é '+resultado4);
+        } else {
+            alert ('O numero que colocou não corresponde a uma das opções. Tente novamente')
+        }
+    </script>
+</body>
+</html>

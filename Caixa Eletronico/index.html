@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>ÚATI - SEU BANCO</title>
+</head>
+
+<body>
+
+    <!-- <input type="checkbox" id="check">
+<label id="icone" for="check"><img src="img/icone.png"></label>
+
+<div class="barra">
+    <nav class="nav2">
+        <a href="#"><div class="link">HOME</div></a>
+        <a href="#"><div class="link">CAIXA ELETRÔNICO</div></a>
+        <a href="#"><div class="link">QUEM SOMOS</div></a>
+    </nav>
+</div> -->
+
+    <header>
+        <div class="div1">
+            <img class="logo" src="img/UATI2.png" alt="logo">
+        </div>
+        <div class="div2">
+            <h1>ÚATI | O SEU BANCO</h1>
+        </div>
+    </header>
+    <nav>
+        <div>
+            <ul>
+
+                <li>
+                    <a href="#"></a>HOME</li>
+                <li class="active">
+                    <a href="#"></a>CAIXA ELETRÔNICO</li>
+                <li>
+                    <a href="#"></a>QUEM SOMOS</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="caixa">
+
+        <div class="inputs" id="deposito">
+            <h2>Valor do depósito:</h2>
+            <input id="depositoid" class="valorinput" type="text" name="depositoid" value="">
+            <input type="button" class="button" onclick="deposito()" value="Depositar">
+        </div>
+
+        <div class="inputs" id="saldo">
+            <h2>O seu saldo é de:</h2>
+            <input id="saldoid" class="valorinput" type="text" name="saldoid" value="0">
+            <!-- <input type="button" class="button" onclick="saldoatual();" value="Atualizar"> -->
+        </div>
+
+        <div class="inputs" id="saque">
+            <h2>Valor do saque:</h2>
+            <input id="saqueid" class="valorinput" type="text" name="saqueid" value="">
+            <input type="button" class="button" onclick="saque();" value="Sacar">
+        </div>
+    </div>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        function deposito() {
+            var sldatual = parseInt(document.getElementById('saldoid').value);
+            var dpst = parseInt(document.getElementById('depositoid').value);
+            var deposito = sldatual + dpst;
+            document.getElementById('saldoid').value = deposito;
+            document.getElementById('depositoid').value = 0;
+        }
+
+        function saque() {
+            var sldatual = parseInt(document.getElementById('saldoid').value);
+            var sq = parseInt(document.getElementById('saqueid').value);
+            var saque = sldatual - sq;
+            document.getElementById('saldoid').value = saque;
+            if (sq > sldatual) {
+                alert('Saque não realizado por falta de saldo')
+                var saque = sldatual;
+                document.getElementById('saldoid').value = sldatual;
+            }
+            document.getElementById('saqueid').value = 0;
+        }
+    </script>
+    <footer>
+        <div>
+            <ul>
+                <li>
+                    <a href="#"></a>HOME</li>
+                <li>
+                    <a href="#"></a>CAIXA ELETRÔNICO</li>
+                <li>
+                    <a href="#"></a>QUEM SOMOS</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdivinheONúmero</title>
+    <script type="text/javascript" src="script.js"></script>
+    <style>
+        #n1, #n2{
+            width: 200px;
+            border: 1px solid #000;
+            float: left;
+            font-size: 150px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+        #n1{
+            background-color: #EEE;
+            height: 200px;
+        }
+        #n2{
+            height: 198px;
+        }
+        button{
+            width: 425px;
+            height: 40px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    
+    </style>
+</head>
+<body onload="resetar()">
+    <h1>REPITA O NUMERO </h1>
+    <div id="n1">0</div>
+    <input type="text" onkeydown="apertouTecla(event)" id="n2">
+    <div style="clear:both"></div>git 
+    <button id="verificar" onclick="verificar()">Verificar</button>
+</body>
+</html>
