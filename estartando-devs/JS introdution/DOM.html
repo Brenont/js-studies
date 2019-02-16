@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ManipulandoDOM</title>
+</head>
+
+<body>
+
+  <h1>Mudando Valor do h3</h1>
+
+  <h3 class="container">Valor inicial</h3>
+  <br><br>
+
+  <input class="input" type="text">
+
+  <button class="btt">Mudar Valor</button>
+
+  <br><br><br>
+
+  <script>
+    //Mudando h3☻
+    var h3 = document.querySelector(".container");
+
+    var btt = document.querySelector(".btt");
+
+    btt.addEventListener("click", function () {
+      var input = document.querySelector(".input");
+
+      h3.textContent = input.value;
+
+    });
+  </script>
+
+</body>
+
+</html>

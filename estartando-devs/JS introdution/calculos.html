@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aula Javascript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h2>Javascript</h2>
+  <br>
+
+  <h1>Calculos</h1>
+  <br>
+  <br>
+  <br>
+
+  <p>valor a</p>
+  <input class="valor-a" type="text">
+  <br><br>
+
+  <p>valor b</p>
+  <input class="valor-b" type="text">
+
+  <br>
+  <br>
+  <br>
+
+  <p class="resultado">Resultado do calculo</p> <br> <br>
+
+  <button class="somar">Soma</button>
+  <button class="subtrair">Subtrair</button>
+
+  <script>
+    var valorA = document.querySelector(".valor-a");
+    var valorB = document.querySelector(".valor-b");
+
+    var result = document.querySelector(".resultado");
+
+    var bttSoma = document.querySelector(".somar");
+    var bttSubtrai = document.querySelector(".subtrair");
+
+    bttSoma.addEventListener("click", function () {
+      result.textContent = parseInt(valorA.value) + parseInt(valorB.value);
+    });
+
+    bttSubtrai.addEventListener("click", function () {
+      result.textContent = parseInt(valorA.value) - parseInt(valorB.value);
+    });
+
+  </script>
+
+</body>
+
+</html>
