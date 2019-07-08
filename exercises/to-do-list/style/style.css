@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  flex-direction: column;
+  background-color: #131313ec
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container { 
+  flex-direction: column;
+  background-color: #181818;
+  height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  justify-content: flex-start;
+}
+
+.title-container{
+  background-image: url("../img/hack-wallpaper-5.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 120px;
+}
+
+.title-container .title-content {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  color: #36cac9;
+}
+
+#list-container {
+  width: 100%;
+  flex-direction: column;
+  list-style-type: none;
+  margin-bottom: 52px;
+}
+
+#list-container .item {
+  /* 100% da largura menos 10px de padding */
+  width: calc(100% - 20px);
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  color: #36cac9;
+}
+
+.item i {
+  cursor: pointer;
+}
+
+.item:nth-child(odd){  /* par */
+  background-color: #181818;
+}
+
+.item:nth-child(even){ /* ímpar */
+  background-color: #272727;
+}
+
+.add-container {
+  position: fixed;
+  width: 100%;
+  max-width: 480px;
+  height: 32px;
+  padding: 10px;
+  bottom: 0;
+  box-shadow: 0px -1px 8px #212121bd;
+  background-color: #131313ec
+}
+
+.add-container input {
+  background-color: transparent;
+  border: none;
+  width: 80%;
+  border-bottom: 1px solid #36cacad8;
+  margin: 0 10px;
+  padding: 5px 2px;
+  color: #36cac9;
+  font-size: 18px;
+}
+
+.add-container input:focus {
+  outline: none;
+}
+
+.add-container i {
+  font-size: 22px;
+  color: #36cac9;
+  cursor: pointer;
+}
